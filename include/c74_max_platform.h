@@ -100,8 +100,9 @@ namespace max {
 	//#ifndef _SCL_SECURE_NO_WARNINGS
 	//#define _SCL_SECURE_NO_WARNINGS
 	//#endif 
-
+	#ifndef NOMINMAX
 	#define NOMINMAX
+	#endif
 	#include "windows.h"
 
 	#define strncpy(dst, src, size) strncpy_s(dst, size, src, _TRUNCATE);
